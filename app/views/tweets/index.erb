@@ -1,0 +1,21 @@
+Your Tweets :
+<ul>
+<% @tweets.each do |tweet| %>
+  <li><%= tweet.text %></li>
+<% end %>
+</ul>
+
+Your Friends :
+<ul>
+  <% @friends.each do |friend| %>
+  <li><%= friend.name %></li>
+  <% end %>
+</ul>
+
+Your Followers :
+<ul>
+  <% @followers.each do |follower| %>
+  <li><%= follower.name %></li>
+  <% end %>
+</ul>
+
